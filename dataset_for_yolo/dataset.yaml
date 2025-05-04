@@ -1,0 +1,5 @@
+path: C:/Users/Vahid/Documents/Jupyter/custom_yolov8/dataset_for_yolo  # Absolute path (forward slashes)
+train: images/train  # Relative to 'path'
+val: images/val      # Relative to 'path'
+names:
+  0: pill
