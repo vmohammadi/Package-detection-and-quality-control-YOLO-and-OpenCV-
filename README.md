@@ -9,7 +9,11 @@ It is noted that you need to perform labelling either with a tool like YoloLabel
 The goal then is to train the YOLO on the dataset and save the best model for the control program. In the control program only you call the model to find the object in the image.
 
 ## Quality control
-You can perform the quality control with different techniques, either deep learning or image processing. I preferred to perform this by using image processing to have both deep learning and image processing in the project. To do so, please refer to "quality_control.ipynb". First we call the trained YOLO to find the object. This is necessary as the box can appear anywhere in the image. Then, we check the edges of the box. We see that the box is damaged if the edges are not straight, and then the box should be ejected out of production line.
+You can perform the quality control with different techniques, either deep learning or image processing. I preferred to perform this by using image processing to have both deep learning and image processing in the project. To do so, please refer to "quality_control.ipynb". Here is an overall diagram of the processing:
+
+![Diagram](https://github.com/vmohammadi/Package-detection-and-quality-control-YOLO-and-OpenCV-/blob/main/otherFiles/dia.png)
+
+First we call the trained YOLO to find the object. This is necessary as the box can appear anywhere in the image. Then, we check the edges of the box. We see that the box is damaged if the edges are not straight, and then the box should be ejected out of production line.
 
 ![im1](https://github.com/vmohammadi/Package-detection-and-quality-control-YOLO-and-OpenCV-/blob/main/otherFiles/0.the%20edges.png)
 
